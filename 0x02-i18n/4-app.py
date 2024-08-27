@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-11;rgb:0000/0000/0000"""task 2"""
+"""task 2"""
 from flask import Flask, render_template, request
 from flask_babel import Babel
 
@@ -36,6 +36,3 @@ def Welcome():
 
 if __name__ == '__main__':
     app.run()
-
-
-    
