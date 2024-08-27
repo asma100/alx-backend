@@ -21,8 +21,8 @@ app.config.from_object(Config)
 @babel.localeselector
 def get_locale():
     """locale"""
-    return request.accept_languages.best_match(babel.supported_locales) 
-
+    user_language = request.accept_languages.best_match(babel.supported_locales) 
+    return user_language
 
 @app.route('/')
 def Welcome():
