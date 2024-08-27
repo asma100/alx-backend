@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def Welcome():
+    """welcome"""
     return render_template('0-index.html')
 
 
