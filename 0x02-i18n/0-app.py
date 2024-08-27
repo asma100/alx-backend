@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """model"""
-from flask import Flask , render_template
+from flask import Flask, render_template
+
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def Welcome():
