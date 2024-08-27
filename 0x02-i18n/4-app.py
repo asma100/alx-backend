@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""task 2"""
+11;rgb:0000/0000/0000"""task 2"""
 from flask import Flask, render_template, request
 from flask_babel import Babel
 
@@ -17,7 +17,7 @@ class Config:
 
 
 app.config.from_object(Config)
-app.url_map.strict_slashes = False
+
 
 @babel.localeselector
 def get_locale():
@@ -31,8 +31,11 @@ def get_locale():
 @app.route('/')
 def Welcome():
     """welcome"""
-    return render_template('3-index.html')
+    return render_template('4-index.html')
 
 
 if __name__ == '__main__':
     app.run()
+
+
+    
